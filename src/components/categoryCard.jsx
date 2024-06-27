@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const CategoryCard = ({ imgSrc, title }) => {
   return (
     <div className="category-card">

@@ -8,7 +8,7 @@ const Navbar = ({ cartItemsCount, isLogged }) => {
     <nav>
       <div className="nav-cont-1">
         <h2 className="nav-h2">
-          Tee-<span style={{ fontWeight: "400" }}>store</span>
+          e3<span style={{ fontWeight: "400" }}>stor</span>
         </h2>
         <ul className="nav-ul">
           <a href="##">Products</a>
