@@ -16,7 +16,7 @@ const ProductCard = ({
         <img src={img} alt="product-img" />
       </div>
       <div className="product-details">
-        <span className="product-catagory">{categoryName}</span>
+        <span className="product-category">{categoryName}</span>
         <h4>
           <a href="##">{productName}</a>
         </h4>
