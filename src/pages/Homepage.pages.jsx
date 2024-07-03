@@ -13,8 +13,8 @@ const Homepage = () => {
           <hr />
           <h2>Categories</h2>
           <div className='cat-cont'>
-            <CategoryCard imgSrc={menClothe} title='Men' />
-            <CategoryCard imgSrc={womenClothe} title='Women' />
+            <CategoryCard imgSrc={menClothe} title="Men's" />
+            <CategoryCard imgSrc={womenClothe} title="Women's" />
           </div>
           
         </div>
