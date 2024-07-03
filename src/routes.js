@@ -26,7 +26,7 @@ export const appRoutes = [
     requireAuth: false,
   },
   {
-    path: "/product/:category",
+    path: "/product/:category?",
     component: Products,
     requireAuth: false,
   },
