@@ -8,6 +8,7 @@ export const ALLOWED_CAT = {
 };
 
 const Products = lazy(() => import("./pages/Products"));
+const Cart = lazy(() => import("./pages/Cart.page"));
 
 export const appRoutes = [
   {
@@ -28,6 +29,11 @@ export const appRoutes = [
   {
     path: "/product/:category",
     component: Products,
+    requireAuth: false,
+  },
+  {
+    path: "/cart",
+    component: Cart,
     requireAuth: false,
   },
 ];
