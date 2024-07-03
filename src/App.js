@@ -15,7 +15,10 @@ function App() {
   const [cartItems, setCartItems] = useState(cartItemInitialState);
   return (
     <div>
-      <Navbar categoryRef={categoryRef} />
+      <Navbar
+        categoryRef={categoryRef}
+        cartItemsCount={cartItems.numberOfItems}
+      />
       <Suspense fallback={() => <h1>Loading...</h1>}>
         <Routes>
           {appRoutes.map((route) => (
@@ -27,6 +30,7 @@ function App() {
                 <route.component
                   categoryRef={categoryRef}
                   _cartItems={cartItems}
+                  setCartItems={setCartItems}
                 />
               }
             />

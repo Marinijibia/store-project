@@ -4,7 +4,7 @@ import ProductCard from '../components/productCard'
 import { ALLOWED_CAT } from "../routes";
 import { useParams } from "react-router-dom";
 
-const Products = () => {
+const Products = ({ setCartItems }) => {
     const { category } = useParams(); 
     const [ allProducts, setAllProducts] = useState([]);
     const [products, setProducts] = useState([]);
@@ -57,7 +57,7 @@ const Products = () => {
                 </span>
                 <span 
                 className={`select-cat-span 
-                ${activeCat === "men's" 
+                ${activeCat === "Men's" 
                 ? 'cat-active' : ''}`} 
                 onClick={() => {handleFilterProducts(ALLOWED_CAT.MENS); 
                 setActiveCat("men's")}}>
@@ -85,6 +85,7 @@ const Products = () => {
                         productName={product.title}
                         description={product.description}
                         price={product.price}
+                        setCartItems={setCartItems}
                     />
                 )}
             </div>
