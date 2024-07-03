@@ -22,7 +22,7 @@ const Cart = ({ _cartItems }) => {
                 <h2>Total : ${_cartItems.totalAmount.toFixed(2)}</h2>
                 <h5>Shipping : $0</h5>
                 <h5>Total Items : {_cartItems.numberOfItems}</h5>
-                <button onClick={() => {}} style={{alignSelf: "center", width: "100%"}}>Check Out</button>
+                <button onClick={() => {}} style={{alignSelf: "center", width: "100%"}}>Checkout</button>
             </div>
             )}
             

@@ -9,6 +9,8 @@ export const ALLOWED_CAT = {
 
 const Products = lazy(() => import("./pages/Products"));
 const Cart = lazy(() => import("./pages/Cart.page"));
+const Checkout = lazy(() => import("./pages/Checkout.page"));
+const Login = lazy(() => import("./pages/Login.page"));
 
 export const appRoutes = [
   {
@@ -34,6 +36,16 @@ export const appRoutes = [
   {
     path: "/cart",
     component: Cart,
+    requireAuth: false,
+  },
+  {
+    path: "/checkout",
+    component: Checkout,
+    requireAuth: true,
+  },
+  {
+    path: "/login",
+    component: Login,
     requireAuth: false,
   },
 ];
