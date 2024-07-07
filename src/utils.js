@@ -12,3 +12,11 @@ export const fetchCategoryProducts = async (_category) => {
   );
   return response.data;
 };
+
+export const authUser = async (email, password) => {
+  const response = await axios.get(`${Base_url}/users`);
+  const authenticate = response.data.find(
+    (user) => user.email === email && user.password === password
+  );
+  return authenticate;
+};
